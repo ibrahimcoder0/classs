@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-content{
+    max-width: 1200px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.bg{
+    background: #f7f9ff;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+  }
+
+
+
+
+  /*header-area*/
+  .header-area{
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0 ;
+    border: 1px solid #ddd;
+    padding: 5px 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .logo {
+    width: 25%;
+    float: left;
+}
+  .logo img{
+    width: 220px;
+    padding: 15px 20px;
+  }
+  .primary-menu {
+    width: 60%;
+    float: left;
+}
+  .menu ul{
+    list-style: none;
+  }
+  .menu ul li{
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.menu ul li a{
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    transition: .3s;
+}
+.menu ul li a:hover {
+    color: red;
+}
+.buttom {
+    width: 15%;
+    float: right;
+}
+.buttom-left {
+    padding: 15px;
+}
+a.btd {
+    background: red;
+    padding: 11px 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+a.btd:hover {
+    background: #fff;
+    color: red;
+    border: 1px solid red;
+}
+
+/*bannder*/
+.banner-section {
+    background: url(img/banner.png) no-repeat center center;
+    background-size: cover;
+    padding: 300px 0;
+    color: #fff;
+    position: relative;
+    background-attachment: fixed;
+  }
+  .banner-title {
+    text-align: center;
+}
+.banner-title h2 {
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+.banner-title p {
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+a.default-btn {
+    padding: 15px 40px;
+    background: red;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/*About Area*/
+.about-area {
+    padding: 50px 0;
+    text-align: center;
+}
+.about-title h1 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+.about-title h1::before {
+    content: "";
+    background: red;
+    position: absolute;
+    height: 4%;
+    width: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .3s;
+}
+.about-title h1:hover::before {
+    width: 100%;
+}
+
+
+
+.about-content {
+    width: 32%;
+    float: left;
+    margin-right: 1.3%;
+    box-shadow: 3px 5px 30px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.about-text {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.about-text p {
+    padding-top: 15px;
+}
+
+/*service*/
+.service-image {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.service-text {
+    text-align: center;
+    padding-top: 40px;
+}
+.service-title h1 {
+    position: relative !important;
+    display: inline-block;
+}
+.service-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.service-title h1:before {
+    content: "";
+    background: red;
+    position: absolute;
+    height: 6%;
+    width: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .3s;
+}
+.service-title h1:hover::before {
+    width: 100%;
+}
+
+.img {
+    position: relative;
+    display: inline-block;
+}
+.img a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transform: scale(0.5);
+    background: rgb(0, 0, 0);
+    transition: all 0.8s ease 0s;
+}
+.img a:hover::before{
+    opacity: .5;
+    transform: scale(1);
+}
+
+
+
+
+.footer {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+}
+
+
+
+
